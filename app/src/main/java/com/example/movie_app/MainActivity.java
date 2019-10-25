@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 for(String str:urlparam.split(" "))
                 {
                     newparam=newparam+"+"+str;
-                     url="https://api.themoviedb.org/3/search/movie?query="+newparam+"&api_key=58a6f7342f33c945a376e7baacc557f5&page=1";
+                    //insert the url you want to fetch data from ie moviedb.org with your own api key
+                    //url="enter your url"
 
                 }
                 new GetDataAsync().execute(url);
